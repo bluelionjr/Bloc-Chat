@@ -6,11 +6,11 @@
             requireBase: false
       });
     $stateProvider
-        .state('main', {
+        .state('home', {
         url: '/',
-        controller: 'MainCtrl as main', 
+        controller: 'HomeCtrl as home', 
         templateUrl: '/templates/home.html'
-    })
+    });
         
         
     };

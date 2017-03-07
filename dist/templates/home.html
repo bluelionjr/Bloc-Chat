@@ -1,1 +1,12 @@
-<h1>Home Page</h1>
+<section class="jumbotron">
+    <h1>Bloc Chat by JR</h1>
+    <p>Send Messages Electronically!!</p>
+</section>
+
+
+
+<section>
+    <div ng-repeat="room in home.rooms">
+        <p>{{ room.$value }}</p> 
+    </div>
+</section>
