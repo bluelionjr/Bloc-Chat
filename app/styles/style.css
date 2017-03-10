@@ -1,0 +1,50 @@
+.jumbotron {
+    background-color: white;
+    text-align: center;
+    text-shadow: 1px 1px darkgray;
+    font-family: helvetica;
+    border-radius: 5x;
+}
+
+body {
+    background-color: whitesmoke;
+    height: 100%;
+    color: darkblue;
+    text-align: left;
+    font-family: helvetica;
+}
+
+.header {
+    color: darkblue;
+    padding: 5px;
+    text-align: left;
+    font-family: helvetica;
+}
+
+.sidebar-header {
+    text-align: center;
+}
+
+.sidebar {
+    background-color: lightgray;
+    width: 250px;
+    max-width: 250px;
+    min-width: 105px;
+    height: 900px;
+    top: 0;
+    left: 0;
+    border-radius: 5px;
+    padding: 7px;
+    text-align: center;
+    font-family: helvetica;
+}
+
+.btn, .room-btn, .btn-default {
+    margin: 10px;
+    background-color: steelblue;
+    text-emphasis-color: white;
+    border-radius: 5px;
+    font-family: helvetica;
+    color: darkblue;
+    text-shadow: 1px 1px darkgray;
+}
