@@ -1,12 +1,28 @@
 <section class="jumbotron">
     <h1>Bloc Chat by JR</h1>
-    <p>Send Messages Electronically!!</p>
 </section>
 
 
 
-<section>
-    <div ng-repeat="room in home.rooms">
-        <p>{{ room.$value }}</p> 
+<!-- Sidebar -->
+        
+<div class="sidebar">
+    <div class="header">
+        <h2 class="sidebar-header">Create Your Own Chat Room</h2>
+        <h4 class="sidebar-header">or use one of ours</h4>
     </div>
-</section>
+    
+    <div class="new-chat-room">
+        <button type="button" class="btn btn-default" ng-click="home.openModal()"><h3>Make New Room</h3></button>
+    </div>
+        <h3>Rooms for Chatting</h3>
+    <div class="chatrooms">
+        <p ng-repeat="room in home.rooms">{{ room.$value }}</p>
+    
+    </div>
+</div>
+    
+    
+
+
+
