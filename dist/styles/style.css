@@ -1,50 +1,170 @@
+*, *::before, *::after{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: "Lucida Sans", sans-serif;
+}
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+/* For desktop: */
+.col-m-1 {width: 8.33%;}
+.col-m-2 {width: 16.66%;}
+.col-m-3 {width: 25%;}
+.col-m-4 {width: 33.33%;}
+.col-m-5 {width: 41.66%;}
+.col-m-6 {width: 50%;}
+.col-m-7 {width: 58.33%;}
+.col-m-8 {width: 66.66%;}
+.col-m-9 {width: 75%;}
+.col-m-10 {width: 83.33%;}
+.col-m-11 {width: 91.66%;}
+.col-m-12 {width: 100%;}
+}
+
+
+
+@media only screen and (min-width: 768px) {
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+}
+
+
+.row::after {
+    content:"";
+    clear: both;
+    display: table;
+}
+
 .jumbotron {
     background-color: white;
     text-align: center;
     text-shadow: 1px 1px darkgray;
-    font-family: helvetica;
     border-radius: 5x;
 }
+
 
 body {
     background-color: whitesmoke;
     height: 100%;
     color: darkblue;
     text-align: left;
-    font-family: helvetica;
 }
 
 .header {
     color: darkblue;
     padding: 5px;
     text-align: left;
-    font-family: helvetica;
 }
 
 .sidebar-header {
     text-align: center;
+    margin: 3px;
 }
 
 .sidebar {
     background-color: lightgray;
-    width: 250px;
-    max-width: 250px;
-    min-width: 105px;
-    height: 900px;
-    top: 0;
-    left: 0;
     border-radius: 5px;
-    padding: 7px;
+    padding: 5px;
     text-align: center;
-    font-family: helvetica;
+    float: left;
 }
 
+.chat-area {
+    float: right;
+    background-color: whitesmoke;
+}
+
+.chatrooms ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.chatrooms li {
+    padding: 8px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 7px;
+    background-color: #6D98B2;
+    color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    width: 50%;
+}
+
+.chatrooms li:hover {
+    background-color: #0392E9;
+    box-shadow: 3px 3px 10px 5px grey;
+}
+
+
 .btn, .room-btn, .btn-default {
-    margin: 10px;
     background-color: steelblue;
-    text-emphasis-color: white;
     border-radius: 5px;
-    font-family: helvetica;
-    color: darkblue;
-    text-shadow: 1px 1px darkgray;
+    color: white;
+    text-emphasis: black;
+    margin: 7px;
+    float: right;
+}
+
+.btn:hover {
+    background-color: #0392E9;
+    box-shadow: 3px 3px 10px 5px grey;
+}
+
+
+/* Medium and small screens (640px) */
+@media (min-width: 640px) {
+    html {font-size: 112%;}
+}
+
+/* Large screens (1024px) */
+@media (min-width: 1024px) {
+    html {font-size: 120%;}
+}
+
+/*Messages*/
+
+.messages {
+    overflow: scroll;
+    background-color: white;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.username {
+    font-weight: bold;
+    background-color: #c4bfbf;
+}
+
+.timestamp {
+    font-size: 80%;
+    color: red;
+    float: right;
+    margin-right: 50px;
+}
+
+.message-body {
+    color: black;
+}
+
+.room-header {
+    margin-left: 10px;
 }
