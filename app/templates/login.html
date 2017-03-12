@@ -1,0 +1,20 @@
+<!-- LOG IN -->
+
+<div style="
+            position: absolute;
+            left: 40%;
+            top: 10%;
+            height: 150px;
+            width: 300px;
+            background-color: white;
+            text-align: center;
+            border: 3px solid black;
+            border-radius: 10px;
+            font-family: arial;
+            z-index: 10;
+            " 
+     class="modal-body" id="modal-body">
+<h4 >Enter Username</h4>
+    <input type="text" name="input" ng-model="modal.username" required><br><br>
+    <button type="button" ng-click="modal.createUsername()" ng-disabled="modal.username == null">Create User</button>
+</div>
