@@ -31,7 +31,7 @@
     </div>
     <div class="message-field">
         <input type="text" name="input" placeholder="Type your message here" class="message-box" ng-model="home.newMessage.content">
-        <button class="btn-send" type="button" ng-click="home.sendMessage()">Send</button>
+        <button class="btn-send" type="button" ng-click="home.sendMessage(); home.newMessage = '' ">Send</button>
     </div>
 
 </div>
